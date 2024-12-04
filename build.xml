@@ -3,6 +3,8 @@
     <property name="build.dir" value="build"/>
     <property name="dist.dir" value="dist"/>
     <property name="jar.name" value="sitairiss9.jar"/>
+    <property environment="env"/>
+    <property name="ANT_HOME" value="${env.ANT_HOME}"/>
 
     <target name="init">
         <mkdir dir="${build.dir}"/>
